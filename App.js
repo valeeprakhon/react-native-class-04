@@ -11,9 +11,6 @@ import {
   ScrollView,
 } from 'react-native';
 
-import Item from './Item'
-import Item2 from './Item2'
-
 let initialArr = [{ id: 1, color: "blue",name: "text1"},{id: 2,color: "red",name: "text2"}];
 
 export default class Login extends Component {
