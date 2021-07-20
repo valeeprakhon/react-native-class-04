@@ -19,7 +19,7 @@ export default class Item2 extends Component {
       }
   }
 
-  check=()=>{
+  checkItem=()=>{
     if(this.state.isCheck){
       this.setState({color:"green"});
       this.setState({text:"Checked"});
