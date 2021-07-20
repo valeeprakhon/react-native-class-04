@@ -1,4 +1,3 @@
-//Order.js
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
@@ -16,15 +15,21 @@ export default class Item extends Component {
     return (
       <View style={styles.containerStyle}>
           <View style={{flexDirection:"row"}}>
-            <View style={{width:50,height:50,backgroundColor:'red'}}/>
+            <View style={{width:50,height:50,backgroundColor:this.props.color}}/>
             <View style={{flexDirection:"column",paddingStart:8}}>
-              <Text> ID : 0 </Text>
-              <Text> Name : unnamed </Text>
+              <Text> ID : {this.props.id} </Text>
+              <Text> Name : {this.props.name} </Text>
             </View>
           </View>
         </View>
     );
   }
+}
+
+Item.PropTypes={
+  id:PropTypes.string,
+  name:PropTypes.string,
+  color:PropTypes.string
 }
 
 
